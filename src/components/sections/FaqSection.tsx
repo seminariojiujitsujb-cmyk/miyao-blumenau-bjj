@@ -16,7 +16,7 @@ export const FAQ_ITEMS: AccordionItem[] = [
   },
   {
     question: "Onde acontecerá?",
-    answer: "No SESI Blumenau, em Blumenau, Santa Catarina.",
+    answer: "R. Itajaí, 3434 - Vorstadt, No SESI Blumenau - SC, 89015-201",
   },
   {
     question: "Quando será?",
