@@ -153,11 +153,16 @@ export function RegistrationSection() {
                     )}
                   </button>
 
-                  <a href="https://forms.gle/e9b5EuFrjVYECDW99" target="_blank">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScJhny5orMhHiaxhGKLVA33qyEo2a7U42BSPflSR_JMZjB0JQ/viewform"
+                    target="_blank"
+                  >
                     <button
                       type="button"
                       className="bg-[#00E85A] text-primary-foreground hover:bg-[#00B846] mt-3 inline-flex w-full items-center justify-center gap-2 rounded-sm px-4 py-3 text-sm font-medium transition-colors"
-                    >Enviar Comprovante</button>
+                    >
+                      Enviar Comprovante
+                    </button>
                   </a>
                 </div>
               </div>
