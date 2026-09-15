@@ -89,8 +89,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#0a0a0a" },
       {
         property: "og:image",
+        content: "https://miyao-blumenau-bjj.vercel.app/icone.PNG",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+
+      {
+        name: "twitter:title",
+        content: "Seminário João Miyao em Blumenau",
+      },
+
+      {
+        name: "twitter:description",
         content:
-          "https://miyao-blumenau-bjj.vercel.app/favicon.ico",
+          "Dia 22 de outubro, João Miyao estará em Blumenau para um seminário especial de Jiu-Jitsu.",
+      },
+
+      {
+        name: "twitter:image",
+        content: "https://miyao-blumenau-bjj.vercel.app/icone.PNG",
       },
     ],
     links: [
