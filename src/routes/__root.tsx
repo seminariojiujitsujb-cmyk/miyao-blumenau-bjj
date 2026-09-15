@@ -87,6 +87,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0a0a0a" },
+      {
+        property: "og:image",
+        content:
+          "https://miyao-blumenau-bjj.vercel.app/favicon.ico",
+      },
     ],
     links: [
       {
