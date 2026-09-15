@@ -134,23 +134,32 @@ export function RegistrationSection() {
                   rows={4}
                   className="bg-background text-foreground border-border w-full resize-none rounded-sm border p-3 font-mono text-xs leading-relaxed focus:outline-none"
                 />
-                <button
-                  type="button"
-                  onClick={handleCopyPixKey}
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 mt-3 inline-flex w-full items-center justify-center gap-2 rounded-sm px-4 py-3 text-sm font-medium transition-colors"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="h-4 w-4" aria-hidden="true" />
-                      Chave copiada
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="h-4 w-4" aria-hidden="true" />
-                      Copiar chave PIX
-                    </>
-                  )}
-                </button>
+                <div>
+                  <button
+                    type="button"
+                    onClick={handleCopyPixKey}
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 mt-3 inline-flex w-full items-center justify-center gap-2 rounded-sm px-4 py-3 text-sm font-medium transition-colors"
+                  >
+                    {copied ? (
+                      <>
+                        <Check className="h-4 w-4" aria-hidden="true" />
+                        Chave copiada
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="h-4 w-4" aria-hidden="true" />
+                        Copiar chave PIX
+                      </>
+                    )}
+                  </button>
+
+                  <a href="https://forms.gle/e9b5EuFrjVYECDW99" target="_blank">
+                    <button
+                      type="button"
+                      className="bg-[#00E85A] text-primary-foreground hover:bg-[#00B846] mt-3 inline-flex w-full items-center justify-center gap-2 rounded-sm px-4 py-3 text-sm font-medium transition-colors"
+                    >Enviar Comprovante</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
