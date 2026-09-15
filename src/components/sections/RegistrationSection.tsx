@@ -18,7 +18,7 @@ import {
   trackWhatsappClick,
   type PaymentMethod,
 } from "@/lib/analytics";
-import pixQrCode from "@/assets/pix-qr-code.png.asset.json";
+import qrCode from "@/assets/pix-qrcode.jpeg";
 
 const TRUST_ITEMS = [
   { icon: MapPin, label: "Evento presencial" },
@@ -113,7 +113,7 @@ export function RegistrationSection() {
 
             <div className="mt-6 flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
               <img
-                src={pixQrCode.url}
+                src={qrCode}
                 alt="QR Code para pagamento via PIX"
                 width={200}
                 height={200}
@@ -177,28 +177,33 @@ export function RegistrationSection() {
 
         {/* WhatsApp group button */}
         <Reveal delay={160}>
-          <div className="border-border bg-background/40 mt-6 rounded-sm border p-6">
+          <div className="bg-primary text-primary-foreground shadow-cta font-display flex min-h-20 w-full flex-col items-center justify-center gap-1 rounded-sm px-5 py-5 text-lg tracking-wide uppercase transition-all duration-200 hover:bg-primary/90 active:scale-[0.99] sm:min-h-24 sm:text-xl mt-6">
             <p className="font-display text-lg uppercase tracking-wide sm:text-xl">
               Grupos à partir de 5 pessoas
             </p>
             <p className="text-muted-foreground mt-2 text-sm">
               Tire dúvidas e faça sua reserva para grupos pelo WhatsApp.
             </p>
-            
+
             <a href="https://wa.me/5547999940464">
-            <button
-              type="button"
-              
-              className="border-border text-foreground hover:border-primary hover:text-primary mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-sm border px-5 py-3 text-sm font-medium transition-all duration-200 active:scale-[0.99] sm:w-auto"
-            >
-              <MessageCircle className="h-5 w-5" aria-hidden="true" />
-              clique aqui
-            </button>
+              <button
+                type="button"
+
+                // className="border-border text-foreground hover:border-primary hover:text-primary mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-sm border px-5 py-3 text-sm font-medium transition-all duration-200 active:scale-[0.99] sm:w-auto"
+
+                className="bg-primary text-primary-foreground hover:bg-primary/90 mt-3 inline-flex w-fit items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition-colors"
+              >
+                <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                clique aqui
+              </button>
             </a>
           </div>
         </Reveal>
 
         <Reveal delay={200}>
+          <p className="text-white mt-8 text-sm font-bold">
+            R. Itajaí, 3434 - Vorstadt, Blumenau - SC, 89015-201
+          </p>
           <p className="text-muted-foreground mt-8 text-sm">
             Inscrição confirmada após a aprovação do pagamento.
           </p>
@@ -214,8 +219,7 @@ export function RegistrationSection() {
           </ul>
 
           <p className="text-muted-foreground mt-6 text-xs leading-relaxed">
-            Pagamento seguro. Confirmação rápida. Vaga garantida após confirmação do
-            pagamento.
+            Pagamento seguro. Confirmação rápida. Vaga garantida após confirmação do pagamento.
           </p>
         </Reveal>
       </div>
