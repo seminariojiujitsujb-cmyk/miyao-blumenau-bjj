@@ -15,9 +15,9 @@ export const eventConfig = {
   country: "BR",
   pixPaymentUrl: "", // PIX is now handled via QR code + copy-paste key
   pixCopyPasteKey:
-    "00020126580014br.gov.bcb.pix01369520929a-cbc6-4328-929f-492128402fa15204000053039865406220.005802BR5924Bruno Pellegrino Rojtenb6009Sao Paulo62220518daqr8165234679620563045318",
+    "00020126580014br.gov.bcb.pix01369520929a-cbc6-4328-929f-492128402fa15204000053039865406200.005802BR5924Bruno Pellegrino Rojtenb6009Sao Paulo62220518daqr8165234667664763047CA4",
   cardPaymentUrl:
-    "https://loja.infinitepay.io/eventosrojt/oya8100-seminario-joao-miyao-oferta-site",
+    "https://loja.infinitepay.io/eventosrojt/smt3476-seminario-joao-miyao",
   instagramUrl: "",
   whatsappUrl: "https://wa.me/5547999940464",
   whatsappGroupText: "Olá! Tenho interesse no seminário do João Miyao para grupos.",
